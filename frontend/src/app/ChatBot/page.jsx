@@ -59,12 +59,7 @@ const Chat = () => {
         avatar:<IoPersonCircle className='w-10 h-10 rounded-full'/>,
         name: "abc",
         message: "hello how are you?"
-      },{
-        id: "chat_1",
-        avatar:<IoPersonCircle className='w-10 h-10 rounded-full'/>,
-        name: "abc",
-        message: "hello how are you?"
-      },
+      }
   ];
 
   return (

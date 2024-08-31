@@ -10,14 +10,14 @@ const Chat = () => {
       id: "chat_1",
       avatar: <IoPersonCircle className="w-10 h-10 rounded-full" />,
       name: "abc",
-      message: "hello, how are you? 😊",
+      message: "hello, how are you? ",
       status: "received"
     },
     {
       id: "chat_2",
       avatar: <IoPersonCircle className="w-10 h-10 rounded-full" />,
       name: "def",
-      message: "wasup? 😎",
+      message: "wasup? ",
       status: "received"
     },
   ]);
@@ -27,19 +27,19 @@ const Chat = () => {
       id: "chat_1",
       avatar: <IoPersonCircle className='w-10 h-10 rounded-full' />,
       name: "abc",
-      message: "hello how are you? 😃"
+      message: "hello how are you? "
     },
     {
       id: "chat_2",
       avatar: <IoPersonCircle className='w-10 h-10 rounded-full' />,
       name: "def",
-      message: "wasupp? 🤔"
+      message: "wasupp? "
     },
     {
       id: "chat_3",
       avatar: <IoPersonCircle className='w-10 h-10 rounded-full' />,
       name: "ghi",
-      message: "hello? 🥺"
+      message: "hello? "
     },
   ];
 
@@ -65,7 +65,7 @@ const Chat = () => {
             msg.id === newMsg.id ? { ...msg, status: "received" } : msg
           )
         );
-      }, 1000);
+      }, 5000);
 
       setNewMessage("");
     }
@@ -79,6 +79,7 @@ const Chat = () => {
   return (
     <>
       <div className='flex flex-row gap-3 min-h-fit min-w-fit p-2 m-2'>
+        {/* {whom to chat area} */}
         <div className='border border-black rounded-xl w-[350px] h-[800px] overflow-y-auto scrollbar-hidden'>
           <div className='flex flex-col'>
             <h1 className='ml-4 mt-4 text-xl'>Chat List</h1>

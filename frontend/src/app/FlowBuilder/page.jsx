@@ -2,7 +2,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div>flow</div>
+    <div>flow builder</div>
   )
 }
 

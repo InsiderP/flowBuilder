@@ -47,6 +47,12 @@ const Chat = () => {
       name: "klm",
       message: "what??? "
     },
+    {
+      id: "chat_5",
+      avatar: <IoPersonCircle className='w-10 h-10 rounded-full' />,
+      name: "tayehung",
+      message: "what happen?? "
+    },
   ];
 
   const [newMessage, setNewMessage] = useState("");
